@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahiyoyo - Votre boutique de baskets et plus encore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #e9d208;
+        }
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+        .section-content {
+            margin-bottom: 30px;
+        }
+        .section-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .section-content p {
+            text-align: justify;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            header, .container, footer {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue chez Ahiyoyo</h1>
+    <p>Vente de produits electroniques, menagers et bien d autres - Livraison disponible</p>
+</header>
+
+<div class="container">
+    <section class="products section-content">
+        <h2>Nos Produits</h2>
+        <img src="renvoie-des-palettes-a-vendre-colis-non-reclame-re.webp" alt="Nos produits">
+        <p>Chez Ahiyoyo, nous vous proposons une vaste gamme de baskets de marques renommées, alliant confort et style pour répondre à toutes vos envies. Que vous soyez à la recherche de modèles sportifs, décontractés ou tendance, vous trouverez forcément la paire qui vous convient. Nos produits sont soigneusement sélectionnés pour leur qualité et leur durabilité.</p>
+    </section>
+
+    <section class="services section-content">
+        <h2>Nos Services</h2>
+        <img src="8c949a183360df25acd6cb7f9e551b47.jpg" alt="Nos services">
+        <p>Pour mieux vous servir, Ahiyoyo offre une gamme de services destinés à faciliter vos achats :</p>
+        <ul>
+            <li><strong>Livraison Rapide :</strong> Recevez vos commandes rapidement et en toute sécurité grâce à notre service de livraison efficace.</li>
+            <li><strong>Paiement en Tranche :</strong> Achetez maintenant et payez en plusieurs fois avec notre service de paiement en tranche, sans frais supplémentaires.</li>
+            <li><strong>Service Client Dédié :</strong> Notre équipe de service client est disponible pour répondre à toutes vos questions et vous assister dans vos achats.</li>
+        </ul>
+    </section>
+
+    <section class="payment-options section-content">
+        <h2>Options de Paiement</h2>
+        <img src="MTN-Mobile-Money-.jpg" alt="Options de paiement">
+        <p>Ahiyoyo vous offre la possibilité de payer des articles sur d'autres grandes plateformes de vente en ligne telles que Shein, Amazon, et Fnac. Profitez de la commodité de regrouper vos achats et de gérer vos paiements en un seul endroit.</p>
+        <ul>
+            <li><strong>Shein :</strong> Trouvez les dernières tendances en mode et payez via Ahiyoyo.</li>
+            <li><strong>Amazon :</strong> Achetez une variété de produits et simplifiez vos paiements.</li>
+            <li><strong>Fnac :</strong> Accédez à un large choix de produits technologiques, culturels et plus encore avec des options de paiement flexibles.</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Ahiyoyo. Tous droits réservés.</p>
+    <div class="contact-info">
+        <p>Contactez-nous via WhatsApp : <a href="https://wa.me/22967478301">+229 67478301</a></p>
+        <p>Suivez-nous sur <a href="https://www.facebook.com/Ahiyoyo" target="_blank">Facebook</a></p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ajoutez des effets dynamiques ici
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.opacity = 0;
+            section.style.transition = 'opacity 1s ease-in-out';
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            sections.forEach(section => {
+                if (scrollPosition > section.offsetTop + section.offsetHeight / 2) {
+                    section.style.opacity = 1;
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+
